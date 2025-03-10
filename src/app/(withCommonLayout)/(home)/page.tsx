@@ -1,4 +1,12 @@
 import { Lekton } from '@next/font/google'
+import fullStackImage from '../../../../public/programming icon/full stack developer.png'
+import frontentImage from '../../../../public/programming icon/frontend developer.png'
+import backendDeveloperImage from '../../../../public/programming icon/backend developer.png'
+import eCommerceImage from '../../../../public/programming icon/e-commerce web.png'
+import webPerformance from '../../../../public/programming icon/web Performance.png'
+import webMaintenance from '../../../../public/programming icon/web Maintenance.png'
+import Image from 'next/image'
+
 
 const lektonFont = Lekton({
     subsets: ['latin'],
@@ -7,13 +15,77 @@ const lektonFont = Lekton({
 const page = () => {
     return (
         <div className={`${lektonFont.className} px-5`}>
+            {/* About me section */}
             <div className='relative'>
                 <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>About Me</p>
                 <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
             </div>
             <div>
-                <h1 className='text-lg font-semibold mt-3 mb-2'>Hello! I’m Bulbul Ahammed.</h1>
+                <h1 className='text-2xl font-semibold mt-3 mb-2'>Hello! I’m Bulbul Ahammed.</h1>
                 <p className='font-medium text-lg'>I’m a passionate <span className='font-bold'>MERN stack developer</span> with a mission to create <span className='font-bold'> high-performance, scalable, and user-friendly web applications.</span> With a strong command over <span className='font-bold'> React, Next.js, TypeScript, and MongoDB, </span> I help businesses and startups build their digital presence with cutting-edge solutions. Let’s build something amazing together!</p>
+            </div>
+            {/* My service section */}
+            <div className='relative my-5'>
+                <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>My Service</p>
+                <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
+            </div>
+            <div className={`${lektonFont.className}`}>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+                    {/* Full-Stack Web Development */}
+                    <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
+                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="Full Stack Developer" src={fullStackImage} />
+                        <p className="font-semibold py-2 text-gray-900">Full-Stack Web Development:</p>
+                        <p className="text-gray-700">
+                            I build <span className="font-semibold">scalable web applications</span> using the <span className="font-semibold">MERN stack</span>, ensuring seamless front-to-back integration.
+                        </p>
+                    </div>
+
+                    {/* Frontend Development */}
+                    <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
+                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="Frontend Developer" src={frontentImage} />
+                        <p className="font-semibold py-2 text-gray-900">Frontend Development:</p>
+                        <p className="text-gray-700">
+                            I craft <span className="font-semibold">modern, responsive UIs</span> with <span className="font-semibold">React, Next.js, and TypeScript</span> for an engaging user experience.
+                        </p>
+                    </div>
+
+                    {/* Backend Development */}
+                    <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
+                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="Backend Developer" src={backendDeveloperImage} />
+                        <p className="font-semibold py-2 text-gray-900">Backend Development:</p>
+                        <p className="text-gray-700">
+                            I develop <span className="font-semibold">secure and efficient APIs</span> using <span className="font-semibold">Node.js and Express.js</span> with authentication and database management.
+                        </p>
+                    </div>
+
+                    {/* E-commerce Development */}
+                    <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
+                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="E-commerce Developer" src={eCommerceImage} />
+                        <p className="font-semibold py-2 text-gray-900">E-commerce Development:</p>
+                        <p className="text-gray-700">
+                            I create <span className="font-semibold">custom online stores</span> with <span className="font-semibold">payment integration</span> and smooth shopping experiences.
+                        </p>
+                    </div>
+
+                    {/* Website Optimization */}
+                    <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
+                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="Performance Optimization" src={webPerformance} />
+                        <p className="font-semibold py-2 text-gray-900">Website Optimization:</p>
+                        <p className="text-gray-700">
+                            I enhance <span className="font-semibold">website speed & SEO</span> using lazy loading, caching, and Core Web Vitals improvements.
+                        </p>
+                    </div>
+
+                    {/* Deployment & Maintenance */}
+                    <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
+                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="Deployment & Maintenance" src={webMaintenance} />
+                        <p className="font-semibold py-2 text-gray-900">Deployment & Maintenance:</p>
+                        <p className="text-gray-700">
+                            I manage <span className="font-semibold">app deployment</span> on <span className="font-semibold">Vercel, Netlify, and DigitalOcean</span>, ensuring regular updates and monitoring.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

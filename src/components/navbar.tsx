@@ -17,7 +17,7 @@ export const Navbar = () => {
   return (
     <div
       className={`sticky top-0 z-50 bg-white backdrop-blur transition duration-200 translate-y-0`}>
-      <div className="hidden md:block lg:block">
+      <div>
         <ul className={``}>
           {navbarItem.map((item) => (
             <Link href={`${item.path}`} key={item.element} className={` ${LektonFont.className} ${currentPage === item.path && 'text-[#F6B846]'} border-b p-3 hover:text-[#F6B846] transition-all flex flex-col items-center justify-center`}>
