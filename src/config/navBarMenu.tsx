@@ -2,7 +2,7 @@ import { FaRegUser } from "react-icons/fa";
 
 export const navbarItem = [
     {
-        path: "about",
+        path: "/",
         element: "About",
         icon: <FaRegUser size={20}/>,
     },
