@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className=" bg-[#F6F6F6] px-5 py-10 mx-auto min-h-screen max-w-7xl flex-grow">
+    <div className=" bg-[#F6F6F6] py-10 mx-auto min-h-screen max-w-7xl flex-grow">
       <div className=' lg:flex justify-between'>
         <Navbar />
         <div className='w-full md:w-full lg:w-5/12 lg:h-screen lg:sticky top-0 lg:overflow-hidden'>

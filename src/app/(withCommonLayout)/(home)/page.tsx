@@ -1,12 +1,13 @@
 import { Lekton } from '@next/font/google'
 import fullStackImage from '../../../../public/programming icon/full stack developer.png'
-import frontentImage from '../../../../public/programming icon/frontend developer.png'
+import frontendImage from '../../../../public/programming icon/frontend developer.png'
 import backendDeveloperImage from '../../../../public/programming icon/backend developer.png'
 import eCommerceImage from '../../../../public/programming icon/e-commerce web.png'
 import webPerformance from '../../../../public/programming icon/web Performance.png'
 import webMaintenance from '../../../../public/programming icon/web Maintenance.png'
 import Image from 'next/image'
-
+import Testimonial from '@/src/components/Testimonial'
+import Client from '@/src/components/Client'
 
 const lektonFont = Lekton({
     subsets: ['latin'],
@@ -42,7 +43,7 @@ const page = () => {
 
                     {/* Frontend Development */}
                     <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
-                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="Frontend Developer" src={frontentImage} />
+                        <Image className="border-2 border-[#F6B846] p-2 rounded-xl" width={70} height={70} alt="Frontend Developer" src={frontendImage} />
                         <p className="font-semibold py-2 text-gray-900">Frontend Development:</p>
                         <p className="text-gray-700">
                             I craft <span className="font-semibold">modern, responsive UIs</span> with <span className="font-semibold">React, Next.js, and TypeScript</span> for an engaging user experience.
@@ -86,6 +87,22 @@ const page = () => {
                     </div>
                 </div>
 
+            </div>
+            {/* My Client Section */}
+            <div className='relative my-5'>
+                <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>Clients</p>
+                <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
+            </div>
+            <div>
+                <Client />
+            </div>
+            {/* Testimonials section */}
+            <div className='relative my-5'>
+                <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>Testimonials</p>
+                <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
+            </div>
+            <div>
+                <Testimonial />
             </div>
         </div>
     );
