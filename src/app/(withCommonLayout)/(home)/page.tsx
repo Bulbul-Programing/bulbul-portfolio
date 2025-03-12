@@ -1,4 +1,3 @@
-import { Lekton } from '@next/font/google'
 import fullStackImage from '../../../../public/programming icon/full stack developer.png'
 import frontendImage from '../../../../public/programming icon/frontend developer.png'
 import backendDeveloperImage from '../../../../public/programming icon/backend developer.png'
@@ -8,29 +7,21 @@ import webMaintenance from '../../../../public/programming icon/web Maintenance.
 import Image from 'next/image'
 import Testimonial from '@/src/components/Testimonial'
 import Client from '@/src/components/Client'
+import Title from '@/src/utils/Title'
 
-const lektonFont = Lekton({
-    subsets: ['latin'],
-    weight: '400',
-})
+
 const page = () => {
     return (
-        <div className={`${lektonFont.className} px-5`}>
+        <div>
             {/* About me section */}
-            <div className='relative'>
-                <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>About Me</p>
-                <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
-            </div>
+            <Title title='About Me' />
             <div>
                 <h1 className='text-2xl font-semibold mt-3 mb-2'>Hello! I’m Bulbul Ahammed.</h1>
                 <p className='font-medium text-lg'>I’m a passionate <span className='font-bold'>MERN stack developer</span> with a mission to create <span className='font-bold'> high-performance, scalable, and user-friendly web applications.</span> With a strong command over <span className='font-bold'> React, Next.js, TypeScript, and MongoDB, </span> I help businesses and startups build their digital presence with cutting-edge solutions. Let’s build something amazing together!</p>
             </div>
             {/* My service section */}
-            <div className='relative my-5'>
-                <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>My Service</p>
-                <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
-            </div>
-            <div className={`${lektonFont.className}`}>
+            <Title title='My Service' />
+            <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
                     {/* Full-Stack Web Development */}
                     <div className='border-2 hover:border-[#F6B846] transition-all cursor-pointer p-2 rounded-md'>
@@ -89,18 +80,12 @@ const page = () => {
 
             </div>
             {/* My Client Section */}
-            <div className='relative my-5'>
-                <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>Clients</p>
-                <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
-            </div>
+            <Title title='My Client' />
             <div>
                 <Client />
             </div>
             {/* Testimonials section */}
-            <div className='relative my-5'>
-                <p className='first-letter:text-[#ff6a00] text-xl font-semibold'>Testimonials</p>
-                <div className=' absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] '></div>
-            </div>
+            <Title title='Testimonial' />
             <div>
                 <Testimonial />
             </div>
