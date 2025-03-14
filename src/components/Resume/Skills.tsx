@@ -1,7 +1,5 @@
 import Progress from "../Progress";
 
-import Title from "@/src/utils/Title";
-
 const Skills = () => {
   return (
     <div>

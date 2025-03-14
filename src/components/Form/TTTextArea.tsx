@@ -8,16 +8,12 @@ interface IProps extends IInput {
   type?: string;
 }
 
-export default function FXTextarea({
+export default function TTTextarea({
   name,
   label,
   variant = "bordered",
-  defaultValue,
 }: IProps) {
-  const {
-    register,
-    formState: { errors },
-  } = useFormContext();
+  const { register } = useFormContext();
 
   const currentValue = useWatch({ name });
 
