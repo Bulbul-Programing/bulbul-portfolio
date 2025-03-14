@@ -15,7 +15,12 @@ const page = () => {
   return (
     <div>
       {/* About me section */}
-      <Title title="About Me" />
+      <div className="relative my-5">
+        <p className="first-letter:text-[#ff6a00]  text-xl font-semibold">
+          About Me
+        </p>
+        <div className=" absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] " />
+      </div>
       <div>
         <h1 className="text-2xl font-semibold mt-3 mb-2">
           Hello! I’m Bulbul Ahammed.
@@ -38,7 +43,12 @@ const page = () => {
         </p>
       </div>
       {/* My service section */}
-      <Title title="My Service" />
+      <div className="relative my-5">
+        <p className="first-letter:text-[#ff6a00]  text-xl font-semibold">
+          My service
+        </p>
+        <div className=" absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] " />
+      </div>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
           {/* Full-Stack Web Development */}
@@ -166,12 +176,22 @@ const page = () => {
         </div>
       </div>
       {/* My Client Section */}
-      <Title title="My Client" />
+      <div className="relative my-5">
+        <p className="first-letter:text-[#ff6a00]  text-xl font-semibold">
+          My Client
+        </p>
+        <div className=" absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] " />
+      </div>
       <div>
         <Client />
       </div>
       {/* Testimonials section */}
-      <Title title="Testimonial" />
+      <div className="relative my-5">
+        <p className="first-letter:text-[#ff6a00]  text-xl font-semibold">
+          Testimonials
+        </p>
+        <div className=" absolute left-[-10px] top-0 rounded-full bg-gradient-to-r from-[#ffd58c] h-[30px] w-[30px] " />
+      </div>
       <div>
         <Testimonial />
       </div>
